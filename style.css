@@ -166,6 +166,32 @@ nav a:hover {
   transform: scale(1.1);
 }
 
+.count {
+  display: inline-block;
+  background: #b71c1c;
+  color: #fff6e5;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-left: 10px;
+  box-shadow: 0 0 10px rgba(183, 28, 28, 0.8);
+}
+``
+
+.seasonal {
+  display: inline-block;
+  background: linear-gradient(135deg, #1b5e20, #4caf50);
+  color: #e8f5e9;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+
+
 /* FOOTER */
 footer {
   text-align: center;
