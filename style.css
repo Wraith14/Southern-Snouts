@@ -259,6 +259,20 @@ section {
   }
 }
 
+/* EGGS SECTION */
+#eggs {
+  border-left: 8px solid #ffca28; /* golden egg color */
+}
+
+#eggs .card {
+  background: linear-gradient(135deg, #fffde7, #fff59d);
+}
+
+/* Optional egg icon accent */
+#eggs h2 {
+  color: #f9a825;
+}
+
 
 /* FOOTER */
 footer {
