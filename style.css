@@ -196,6 +196,70 @@ section {
   box-shadow: 0 14px 28px rgba(0,0,0,0.45);
 }
 
+
+/* COLLAGE SECTION */
+#farm-collage {
+  text-align: center;
+}
+
+#farm-collage h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #2e7d32;
+}
+
+/* COLLAGE GRID */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  gap: 12px;
+}
+
+/* MAKE IT LOOK LIKE A MAGAZINE COLLAGE */
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid #fff176;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* MIXED SIZES */
+.collage img:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.collage img:nth-child(4) {
+  grid-column: span 2;
+}
+
+/* HOVER EFFECT */
+.collage img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 700px) {
+  .collage {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .collage img:nth-child(1),
+  .collage img:nth-child(4) {
+    grid-column: span 2;
+  }
+}
+
+
 /* FOOTER */
 footer {
   text-align: center;
